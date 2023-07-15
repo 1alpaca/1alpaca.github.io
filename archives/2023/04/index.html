@@ -23,12 +23,12 @@
 
 
 
-  <meta name="description" content="靠北啦！">
+  <meta name="description" content="此心安处是吾乡">
 <meta property="og:type" content="website">
 <meta property="og:title" content="-羊驼安全屋-">
 <meta property="og:url" content="https://1alpaca.github.io/archives/2023/04/index.html">
 <meta property="og:site_name" content="-羊驼安全屋-">
-<meta property="og:description" content="靠北啦！">
+<meta property="og:description" content="此心安处是吾乡">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="Alpaca">
 <meta name="twitter:card" content="summary">
@@ -135,6 +135,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -309,7 +314,7 @@
     <img class="site-author-image" itemprop="image" alt="Alpaca"
       src="/images/1alpaca.png">
   <p class="site-author-name" itemprop="name">Alpaca</p>
-  <div class="site-description" itemprop="description">靠北啦！</div>
+  <div class="site-description" itemprop="description">此心安处是吾乡</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -328,9 +333,6 @@
       </span>
       <span class="links-of-author-item">
         <a href="mailto:978518971@qq.com" title="E-Mail → mailto:978518971@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://twitter.com/QiuAlpaca" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;QiuAlpaca" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://weibo.com/7337387860" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;7337387860" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
@@ -355,6 +357,24 @@
     <footer class="footer">
       <div class="footer-inner">
         
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>zh-tw</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="">
+      
+        <option value="zh-tw" data-href="/archives/2023/04/index.html" selected="">
+          zh-tw
+        </option>
+      
+        <option value="en" data-href="/en/archives/2023/04/index.html" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
 
         <!--
 
@@ -372,6 +392,26 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div> -->
 
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("04/27/2023 00:00:00");//建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+</div>
 
         
 <div class="busuanzi-count">
